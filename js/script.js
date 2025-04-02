@@ -30,4 +30,4 @@ form.addEventListener('submit', async function(e) {
     } catch (error) {
         alert('Erreur : ' + error.message);
     }
-});
+}); 
