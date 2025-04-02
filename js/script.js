@@ -1,6 +1,13 @@
-// Compteur de caractères
-document.getElementById('message').addEventListener('input', function() {
-    const remaining = 184 - this.value.length;
+const messageTextarea = document.getElementById('message');
+const maxLength = 184;
+
+messageTextarea.addEventListener('input', function() {
+    // Limiter la saisie à maxLength caractères
+    if (this.value.length > maxLength) {
+        this.value = this.value.substring(0, maxLength);
+    }
+    
+    const remaining = maxLength - this.value.length;
     document.querySelector('.caracteres-restants').textContent = `${remaining} caractères restants`;
 });
 
