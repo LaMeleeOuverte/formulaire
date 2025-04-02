@@ -1,6 +1,6 @@
 // Compteur de caractères
 document.getElementById('message').addEventListener('input', function() {
-    const remaining = 250 - this.value.length;
+    const remaining = 184 - this.value.length;
     document.querySelector('.caracteres-restants').textContent = `${remaining} caractères restants`;
 });
 
