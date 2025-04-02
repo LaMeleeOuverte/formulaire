@@ -23,7 +23,7 @@ form.addEventListener('submit', async function(e) {
             alert('Message envoyé avec succès !');
             // Réinitialiser le formulaire
             form.reset();
-            document.querySelector('.caracteres-restants').textContent = '250 caractères restants';
+            document.querySelector('.caracteres-restants').textContent = '184 caractères restants';
         } else {
             throw new Error('Erreur lors de l\'envoi');
         }
